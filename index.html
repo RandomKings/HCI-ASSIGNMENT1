@@ -3,60 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigment 1</title>
+    <title>Assignment 1</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h3 {
+            color: #666;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        h4 {
+            color: red;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a.instagram-link {
+            color: #007BFF;
+        }
+
+        a.instagram-link:hover {
+            color: red;
+        }
+
+        ul, ol {
+            text-align: left;
+        }
+
+        ul li, ol li {
+            margin-bottom: 5px;
+            margin-left: 47%;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    </style>
 </head>
-<body style="background-color: blanchedalmond;">
+<body>
     <h1>Pranav Harish Nathani</h1>
     <h3>2702293872 - L1CC</h3>
+    <hr>
     <section>
-    <p>I am a student in binus univeristy majoring in comp sci. My hobbies are playing badminton, bowling. During my free time i like to watch anime or play games mainly fps like valorant and you know the usuals.</P>
-    <input type = "radio" id = "male" name = "gender" value= "male" checked>
-    <label>male</label><br>
-    <input type = "radio" id = "female" name = "gender" value="female">
-    <label>female</label>
-</section>
-<section>
-    <p>
-        <h4>MY INFORMATION</h4>
-        <a href ="https://www.instagram.com/pranavv.n/" ><img src="instagrammm.png" width="30" height="30"></a>
-        <a href="https://www.instagram.com/pranavv.n/" alt ="instagram link">Instagram</a><br><br>
-        <img src = "me.png" alt="image of me" title="my nickname?????" width="400" height="200">
-    </p>
-</section>
-<section>
-    <p>
-        <h4>Education</h4>
-        <ol>
-            <li><a href="https://www.instagram.com/littleangelsschool/">Little angels</a></li>
-            <li><a href="https://universalschool.id">Universal Kemayoran</a></li>
-            <li><a href="https://binus.ac.id">Binus University</a></li>
-        </ol>
-    </p>
-</section>
-<section>
-    <p>
-        <h4>Programming Skills</h4>
-        <input type="checkbox" id="HTML" name="languages" checked>
-        <label>HTML</label>
-        <input type="checkbox" id="JavaScript" name="languages">
-        <label>JavaScript</label>
-        <input type="checkbox" id="Python" name="languages">
-        <label>Python</label>
-        <input type="checkbox" id="Java" name="languages" checked>
-        <label>Java</label>
-        <input type="checkbox" id="C++" name="languages">
-        <label>C++</label>
-    </p>
-</section>
-<section>
-    <h5>Hobbies</h5>
-    <ul>
-        <li>bowling</li>
-        <li>badminton</li>
-        <li>playing games</li>
-        <li>watching anime</li>
-    </ul>
-
-</section>
+        <p>I am a student at Binus University majoring in computer science. My hobbies include playing badminton, bowling, watching anime, and playing video games, especially FPS games like Valorant.</p>
+        <input type="radio" id="male" name="gender" value="male" checked required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for "female">Female</label>
+    </section>
+    <section>
+        <p>
+            <h4>MY INFORMATION</h4>
+            <a href="https://www.instagram.com/pranavv.n/" class="instagram-link">
+                <img src="instagrammm.png" width="30" height="30" alt="Instagram">
+            </a><br>
+            <a href="https://www.instagram.com/pranavv.n/" alt="Instagram link" class="instagram-link">Instagram</a><br><br>
+            <img src="me.png" alt="Image of me" title="My nickname" width="400" height="200">
+        </p>
+    </section>
+    <section>
+        <p>
+            <h4>Education</h4>
+            <ol>
+                <li><a href="https://www.instagram.com/littleangelsschool/">Little Angels</a></li>
+                <li><a href="https://universalschool.id">Universal Kemayoran</a></li>
+                <li><a href="https://binus.ac.id">Binus University</a></li>
+            </ol>
+        </p>
+    </section>
+    <section>
+        <p>
+            <h4>Programming Skills</h4>
+            <input type="checkbox" id="HTML" name="languages" checked>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="JavaScript" name="languages">
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" id="Python" name="languages">
+            <label for="Python">Python</label>
+            <input type="checkbox" id="Java" name="languages" checked>
+            <label for="Java">Java</label>
+            <input type="checkbox" id="C++" name="languages">
+            <label for="C++">C++</label>
+        </p>
+    </section>
+    <section>
+        <h4>Hobbies</h4>
+        <ul>
+            <li>Bowling</li>
+            <li>Badminton</li>
+            <li>Playing games</li>
+            <li>Watching anime</li>
+        </ul>
+    </section>
 </body>
 </html>
